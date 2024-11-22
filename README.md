@@ -17,8 +17,8 @@ site:
 ## Result
 Macbook Air M2 16GB 512GB
 ```
-PHP CLI Builtin Server    -> 150 RPS
-PHP FPM + Nginx + Opcache ->  2K RPS
-PHP FPM + Nginx + Opcache -> 13K RPS
+PHP CLI Builtin Server                    -> 150 RPS
+PHP FPM + Nginx + Opcache                 ->  2K RPS
+PHP FPM + Nginx + Opcache + FastCGI Cache -> 13K RPS
 ```
 
