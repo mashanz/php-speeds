@@ -1,0 +1,17 @@
+services:
+  php-raw:
+    image: docker.io/php:8.3-cli
+    volumes:
+      - ./src/:/var/www/html/
+    ports:
+      - "8081:8081"
+    command: sh -c "cd /var/www/html && php -S 0.0.0.0:8081"
+  php-fpm:
+    image: docker.io/php:8.3-fpm
+    volumes:
+      - ./src/:/var/www/html/
+    command: sh -c "php-fpm -F"
+  nginx:
+    image: docker.io/nginx:1.27.2
+    ports:
+      - "8888:80"
